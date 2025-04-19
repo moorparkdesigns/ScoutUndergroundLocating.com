@@ -12113,3 +12113,51 @@ html {
 .download-link:hover {
   text-decoration: underline !important;
 }
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #7d121a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.area-card:hover .icon-circle {
+  background-color: #a31b25;
+}
+
+.area-card:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s ease;
+}
+.icon-box {
+  background-color: #7d121a;
+  width: 50px; /* Make sure the width and height are the same */
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box; /* Ensure no padding/margin messes with sizing */
+}
+
+.icon-box i {
+  color: white;
+  font-size: 1.5rem; /* Adjust this size for consistency with other icons */
+  line-height: 1; /* Prevent the icon from being vertically stretched */
+}
+
+.service-card:hover .icon-box {
+  background-color: #a31b25;
+}
+
+.service-card {
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
