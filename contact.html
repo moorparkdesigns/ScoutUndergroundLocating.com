@@ -1,133 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content />
-        <meta name="author" content />
-        <title>Modern Business - Start Bootstrap Template</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Start Bootstrap</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Page content-->
-            <section class="py-5">
-                <div class="container px-5">
-                    <!-- Contact form-->
-                    <div class="bg-light rounded-4 py-5 px-4 px-md-5">
-                        <div class="text-center mb-5">
-                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
-                            <h1 class="fw-bolder">Get in touch</h1>
-                            <p class="lead fw-normal text-muted mb-0">Let's work together!</p>
-                        </div>
-                        <div class="row gx-5 justify-content-center">
-                            <div class="col-lg-8 col-xl-6">
-                                <!-- * * * * * * * * * * * * * * *-->
-                                <!-- * * SB Forms Contact Form * *-->
-                                <!-- * * * * * * * * * * * * * * *-->
-                                <!-- This form is pre-integrated with SB Forms.-->
-                                <!-- To make this form functional, sign up at-->
-                                <!-- https://startbootstrap.com/solution/contact-forms-->
-                                <!-- to get an API token!-->
-                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                    <!-- Name input-->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                        <label for="name">Full name</label>
-                                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                                    </div>
-                                    <!-- Email address input-->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                        <label for="email">Email address</label>
-                                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                                    </div>
-                                    <!-- Phone number input-->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                        <label for="phone">Phone number</label>
-                                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                                    </div>
-                                    <!-- Message input-->
-                                    <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                        <label for="message">Message</label>
-                                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                                    </div>
-                                    <!-- Submit success message-->
-                                    <!---->
-                                    <!-- This is what your users will see when the form-->
-                                    <!-- has successfully submitted-->
-                                    <div class="d-none" id="submitSuccessMessage">
-                                        <div class="text-center mb-3">
-                                            <div class="fw-bolder">Form submission successful!</div>
-                                            To activate this form, sign up at
-                                            <br />
-                                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                        </div>
-                                    </div>
-                                    <!-- Submit error message-->
-                                    <!---->
-                                    <!-- This is what your users will see when there is-->
-                                    <!-- an error submitting the form-->
-                                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                                    <!-- Submit Button-->
-                                    <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="#!">Privacy</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terms</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contact</a>
-                    </div>
-                </div>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Primary Meta Tags -->
+    <title>Contact Us | Scout Underground Locating</title>
+    <meta
+      name="description"
+      content="Need underground utility locating? Contact Scout Underground Locating in Auburn, WA. Call 530-613-0688 or use our contact form to get in touch."
+    />
+
+    <meta
+      name="title"
+      content="Scout Underground Locating | Utility & Septic Tank Locating in Auburn, WA"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.scoutundergroundlocating.com/"
+    />
+    <meta
+      property="og:title"
+      content="Scout Underground Locating | Precision. Safety. Peace of Mind."
+    />
+    <meta
+      property="og:description"
+      content="Serving Auburn, WA and nearby counties with expert underground utility & septic locating services. Trusted, experienced, and committed to safety."
+    />
+    <meta
+      property="og:image"
+      content="https://www.scoutundergroundlocating.com/assets/logo.png"
+    />
+    <!-- Replace with actual image URL -->
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://www.scoutundergroundlocating.com/"
+    />
+    <meta
+      name="twitter:title"
+      content="Scout Underground Locating | Precision. Safety. Peace of Mind."
+    />
+    <meta
+      name="twitter:description"
+      content="Safe, accurate utility and septic tank locating for residential & commercial properties in Auburn, WA and nearby cities."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.scoutundergroundlocating.com/assets/logo.png"
+    />
+    <!-- Replace with actual image URL -->
+
+    <!-- Keywords -->
+    <meta
+      name="keywords"
+      content="Utility Locating Auburn WA, Septic Tank Locating Auburn, Underground Utility Services, Scout Underground Locating, Auburn WA Digging Safety, Commercial Utility Locating, Residential Septic Locating, Safe Digging Auburn, Underground Mapping WA, Placer County Utility Locator"
+    />
+
+    <!-- Additional Metadata -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Scout Underground Locating" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Modern Business - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column">
+    <main class="flex-shrink-0">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-1">
+        <div
+          class="container custom-container d-flex justify-content-between align-items-center"
+        >
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img
+              class="logo me-2"
+              src="assets/Scout-Underground-Logo.png"
+              alt="Logo"
+              style="height: 75px"
+            />
+          </a>
+
+          <!-- Toggle Button for Mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Links & Phone -->
+          <div
+            class="collapse navbar-collapse justify-content-end py-5 py-lg-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-4 mb-2 mb-lg-0 small fw-bolder">
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="resume.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="projects.html">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="contact.html">Contact</a>
+              </li>
+            </ul>
+
+            <!-- Phone Number (visible inside and outside hamburger menu) -->
+            <div class="d-flex align-items-center">
+              <i class="bi bi-telephone-fill text-gradient me-2 fs-5"></i>
+              <a
+                href="tel:+15306130688"
+                class="fw-bold text-gradient fs-5 text-decoration-none"
+              >
+                (530) 613·0688
+              </a>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+          </div>
+        </div>
+      </nav>
+
+      <section
+        class="py-5 bg-light d-flex align-items-center"
+        id="contact"
+        style="min-height: 100vh"
+      >
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Contact Info + Icon Highlights -->
+            <div class="col-md-6 mb-5 mb-md-0">
+              <h2 class="text-uppercase mb-4 fw-bold text-dark">
+                Get In Touch With Us
+              </h2>
+              <p class="text-muted mb-4">
+                We’re here to answer any questions you may have about our
+                services. Reach out and we'll respond as soon as we can.
+              </p>
+
+              <!-- Contact Details -->
+              <ul class="list-unstyled text-dark mb-5">
+                <li class="mb-3">
+                  <i class="fas fa-phone-alt me-2" style="color: #7d121a"></i>
+                  <a
+                    href="tel:+15306130688"
+                    class="a text-muted text-decoration-none"
+                  >
+                    (530) 613·0688
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <i class="fas fa-envelope me-2" style="color: #7d121a"></i>
+                  <a
+                    href="mailto:info@scoutlocating.com"
+                    class="a text-muted text-decoration-none"
+                    >info@scoutlocating.com</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <i
+                    class="fas fa-map-marker-alt me-2"
+                    style="color: #7d121a"
+                  ></i>
+                  <a
+                    href="https://www.google.com/maps/place/315+Woodside+Way,+Auburn,+CA+95603"
+                    target="_blank"
+                    class="a text-muted text-decoration-none"
+                  >
+                    315 Woodside Way, Auburn, CA 95603
+                  </a>
+                </li>
+              </ul>
+
+              <!-- Service Highlights -->
+              <div class="d-flex gap-4 text-center text-muted">
+                <div>
+                  <i
+                    class="fas fa-briefcase fa-2x mb-2"
+                    style="color: #7d121a"
+                  ></i>
+                  <p class="mb-0 small">Professional Service</p>
+                </div>
+                <div>
+                  <i class="fas fa-clock fa-2x mb-2" style="color: #7d121a"></i>
+                  <p class="mb-0 small">Quick Response</p>
+                </div>
+                <div>
+                  <i class="fas fa-users fa-2x mb-2" style="color: #7d121a"></i>
+                  <p class="mb-0 small">Friendly Team</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-6">
+              <!-- Form Header -->
+              <div class="mb-4">
+                <h3 class="fw-bold text-dark">
+                  <i class="fas fa-paper-plane me-2" style="color: #7d121a"></i>
+                  Send Us a Message
+                </h3>
+                <p class="text-muted">
+                  Have a question or need help? Fill out the form and we’ll get
+                  back to you shortly.
+                </p>
+              </div>
+
+              <form
+                id="contactForm"
+                action="https://formspree.io/f/xkggwrpe"
+                method="POST"
+                novalidate
+              >
+                <div class="mb-3">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Full Name"
+                    />
+                    <label for="name">Full Name</label>
+                  </div>
+                  <div
+                    id="nameError"
+                    class="text-danger mt-1"
+                    style="height: 1.25rem"
+                  ></div>
+                </div>
+
+                <div class="mb-3">
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Email Address"
+                    />
+                    <label for="email">Email Address</label>
+                  </div>
+                  <div
+                    id="emailError"
+                    class="text-danger mt-1"
+                    style="height: 1.25rem"
+                  ></div>
+                </div>
+
+                <div class="mb-3">
+                  <div class="form-floating">
+                    <input
+                      type="tel"
+                      name="phone"
+                      class="form-control"
+                      id="phone"
+                      placeholder="Phone Number"
+                    />
+                    <label for="phone">Phone Number</label>
+                  </div>
+                  <div
+                    id="phoneError"
+                    class="text-danger mt-1"
+                    style="height: 1.25rem"
+                  ></div>
+                </div>
+
+                <div class="mb-3">
+                  <div class="form-floating">
+                    <textarea
+                      name="message"
+                      class="form-control"
+                      id="message"
+                      rows="4"
+                      placeholder="Your Message"
+                    ></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                  <div
+                    id="messageError"
+                    class="text-danger mt-1"
+                    style="height: 1.25rem"
+                  ></div>
+                </div>
+
+                <div class="mb-3">
+                  <button
+                    class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
+                    type="submit"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="bg-white py-4 mt-auto">
+      <div class="container px-5">
+        <div
+          class="row align-items-center justify-content-between flex-column flex-sm-row"
+        >
+          <div class="col-auto">
+            <div class="small m-0">Copyright &copy; Your Website 2023</div>
+          </div>
+          <div class="col-auto">
+            <a class="small" href="#!">Privacy</a>
+            <span class="mx-1">&middot;</span>
+            <a class="small" href="#!">Terms</a>
+            <span class="mx-1">&middot;</span>
+            <a class="small" href="#!">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Scout Underground Locating",
+        "image": "https://www.scoutundergroundlocating.com/assets/logo.png",
+        "telephone": "+1-530-613-0688",
+        "url": "https://www.scoutundergroundlocating.com/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Auburn",
+          "addressRegion": "WA",
+          "addressCountry": "US"
+        },
+        "description": "Scout Underground Locating offers professional utility and septic tank locating services throughout Auburn, WA and surrounding areas. Safety, precision, and peace of mind on every job.",
+        "areaServed": [
+          "Auburn WA",
+          "Placer County",
+          "Nevada County",
+          "El Dorado County",
+          "Sacramento County",
+          "Yuba County",
+          "Sutter County",
+          "Butte County",
+          "Amador County"
+        ],
+        "founder": "Scout Culture Team",
+        "foundingDate": "2004"
+      }
+    </script>
+  </body>
 </html>
