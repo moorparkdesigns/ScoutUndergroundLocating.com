@@ -12157,3 +12157,9 @@ html {
 .service-card:hover {
   transform: translateY(-5px);
 }
+
+#services .icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
